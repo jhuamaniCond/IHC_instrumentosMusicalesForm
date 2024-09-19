@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Inventario - Cervantes</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnH/4O4S2+5goHPCp6N8GtFYo9j2/p1/9E/t7dqmo5K7n5gUgsIvG/6L1drt3s3wfpKZcTlA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Estilos personalizados -->
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+        }
+        h1 {
+            color: #343a40;
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+        }
+        .form-label {
+            font-weight: 600;
+        }
+        .btn-primary {
+            background-color: #007bff;
+            border: none;
+        }
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+        .btn-secondary {
+            background-color: #6c757d;
+            border: none;
+        }
+        .btn-secondary:hover {
+            background-color: #5a6268;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4"><i class="fas fa-guitar"></i> Inventario de Instrumentos Musicales</h1>
+        <form>
+            <!-- Información del instrumento -->
+            <div class="mb-3">
+                <label for="nombreInstrumento" class="form-label"><i class="fas fa-music"></i> Nombre del Instrumento</label>
+                <input type="text" class="form-control" id="nombreInstrumento" placeholder="Ejemplo: Violín">
+            </div>
+
+            <div class="mb-3">
+                <label for="tipoInstrumento" class="form-label"><i class="fas fa-list"></i> Tipo de Instrumento</label>
+                <select class="form-select" id="tipoInstrumento">
+                    <option value="">Seleccionar...</option>
+                    <option value="cuerda">Cuerda</option>
+                    <option value="viento">Viento</option>
+                    <option value="percusión">Percusión</option>
+                    <option value="teclado">Teclado</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label for="marcaInstrumento" class="form-label"><i class="fas fa-industry"></i> Marca</label>
+                <input type="text" class="form-control" id="marcaInstrumento" placeholder="Ejemplo: Yamaha">
+            </div>
+
+            <div class="mb-3">
+                <label for="cantidadInstrumentos" class="form-label"><i class="fas fa-boxes"></i> Cantidad en Inventario</label>
+                <input type="number" class="form-control" id="cantidadInstrumentos" placeholder="Ejemplo: 5">
+            </div>
+
+            <div class="mb-3">
+                <label for="precioInstrumento" class="form-label"><i class="fas fa-dollar-sign"></i> Precio por Unidad (USD)</label>
+                <input type="number" class="form-control" id="precioInstrumento" step="0.01" placeholder="Ejemplo: 500.00">
+            </div>
+
+            <!-- Botones de acción -->
+            <div class="d-grid gap-2 d-md-block text-center">
+                <button type="submit" class="btn btn-primary btn-lg me-2"><i class="fas fa-save"></i> Guardar</button>
+                <button type="reset" class="btn btn-secondary btn-lg"><i class="fas fa-trash-alt"></i> Limpiar Formulario</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeo9F+CUDE2aCZp3v+AzOn51p5mI5O1Bbh3mWg0LDDhDJXl" crossorigin="anonymous"></script>
+</body>
+</html>
